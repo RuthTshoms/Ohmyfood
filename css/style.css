@@ -2,7 +2,69 @@
   font-family: 'Roboto', sans-serif;
 }
 
+body
+{
+  margin: 0;
+  max-width: 768px;
+  /* ajouter margin auto pour centrer */
+}
+
+header
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 h1
 {
-  font-family: 'Shrikhand', cursive;  
+  font-family: 'Shrikhand', cursive; 
+  background-color: white; 
+}
+
+form
+{
+  border: 1px solid #eaeaea;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: #eaeaea;
+  box-shadow: 2px 0 0 #eaeaea;
+}
+
+.fa-map-marker-alt
+{
+  padding-top: 10px;
+}
+
+input[type="text"]
+{
+  height: 40px;
+  padding-left: 20px;
+  border: 0;
+  background-color: #eaeaea ;
+  cursor: pointer;
+  
+}
+
+::placeholder
+{
+  color: black;
+}
+
+#decouvrez
+{
+  font-weight: lighter;
+  margin-left: 17px;
+  font-size: 19px;
+}
+
+#explorer
+{
+  color: white;
+  border: 0;
+  background: linear-gradient(to bottom right, #FF79DA , #9356DC);
+  border-radius: 25px;
+  padding: 13px;
+  cursor: pointer;
 }
