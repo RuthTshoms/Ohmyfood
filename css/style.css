@@ -82,3 +82,66 @@ input[type="text"]
   padding-bottom: 30px;
   background-color: #f6f6f6;
 }
+
+#container-fonctionnement
+{
+  display: flex;
+  flex-direction: column;
+}
+
+h2
+{
+  margin-left: 17px;
+}
+
+.item-fonct
+{
+  display: flex;
+  flex-direction: row;
+  margin-left: 20px;
+  border-radius: 25px;
+  background-color: #f6f6f6;
+  margin-bottom: 20px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-top: 0;
+  justify-content: space-evenly;
+}
+
+.item-fonct:hover
+{
+  background-color: #f5edff;
+  cursor: pointer;
+}
+
+.choix-fonct
+{
+  padding-right: 52px;
+  font-size: 14px;
+}
+
+.fa-store
+{
+  color: #828282;
+  font-size: 16px;
+  padding-top: 13px;
+}
+
+.fa-store:hover
+{
+  color: #9356DC;
+}
+
+.chiffre
+{
+  display: flex;
+  justify-content: center;
+  border-radius: 10px;
+  background-color: #9356DC;
+  padding: 3px;
+  color: white;
+  font-size: 12px;
+  width: 14px;
+  margin-bottom: 0;
+  margin-left: 12px;  
+}
