@@ -145,3 +145,21 @@ h2
   margin-bottom: 0;
   margin-left: 12px;  
 }
+
+#container-restaurants
+{
+  background-color: #eaeaea;
+  width: 100%;
+  margin: 20px 10px;
+}
+.img-menu
+{
+  width: 98%;
+  height: 200px;
+  object-fit: contain;
+}
+
+.item-menu
+{
+  margin-bottom: 15px;
+}
