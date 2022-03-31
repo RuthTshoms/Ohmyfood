@@ -215,13 +215,18 @@ footer
   padding-left: 20px;
 }
 
+.footer-logo, nav a, .fa-utensils
+{
+  color: white;
+  font-size: 15px;
+}
+
 .footer-logo
 {
   font-family: 'Shrikhand', cursive;
-  color: white;
-}
+} 
 
-nav a 
+.footer-link
 {
-  color: white;
+  line-height: 1.8;
 }
