@@ -146,10 +146,10 @@ input[type="text"]
   display: flex;
   flex-direction: column;
   background-color: #f6f6f6;
-  width: 100%;
   max-width: 768px;
   /* position: relative; par rapport à item-menu*/
   padding-left: 20px;
+  /* padding-right: 20px; voir plutard si utile */
 }
 
 .img-menu
@@ -157,15 +157,17 @@ input[type="text"]
   /* width: 98%; car elle empeche border-radius, peut ê réduire width*/ 
   height: 175px;
   object-fit: contain;
-  border-radius: 15px 15px 0 0;
+  border-radius: 20px 20px 0 0;
+  height: 150px;
 }
 
 .item-menu
 {
   margin-bottom: 15px;
-  border-radius: 20px;
+  border-radius: 20px; /* de l'item et non de l'img */
   background-color: white;
-  width: 262px;
+  /* width: 290px; /*
+  /* height à revoir une fois width img réglée */
 }
 
 a
@@ -202,5 +204,24 @@ h3
 
 .fa-heart
 {
-  position: absolute; /* à compléter */
+  position: absolute;
+  right: 89px;
+  padding-top: 13px;
+}
+
+footer
+{
+  background-color: #353535;
+  padding-left: 20px;
+}
+
+.footer-logo
+{
+  font-family: 'Shrikhand', cursive;
+  color: white;
+}
+
+nav a 
+{
+  color: white;
 }
