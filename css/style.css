@@ -5,7 +5,6 @@
 body
 {
   margin: 0;
-  max-width: 768px;
   /* ajouter margin auto pour centrer */
 }
 
@@ -202,7 +201,7 @@ h3
   display: flex;
 }
 
-.fa-heart
+.fa-heart-o
 {
   position: absolute;
   right: 89px;
