@@ -107,6 +107,11 @@ input[type="text"]
 {
   background-color: #f5edff;
   cursor: pointer;
+}   /* inclure hover de l'icone dans hover de l'item */
+
+.fa-store:hover
+{
+  color: #9356DC;
 }
 
 .choix-fonct
@@ -115,16 +120,11 @@ input[type="text"]
   font-size: 14px;
 }
 
-.fa-store
+.fa-store, .fa-mobile, .fa-square-list
 {
   color: #828282;
   font-size: 16px;
   padding-top: 13px;
-}
-
-.fa-store:hover
-{
-  color: #9356DC;
 }
 
 .chiffre
@@ -148,17 +148,15 @@ input[type="text"]
   display: flex;
   flex-direction: column;
   background-color: #f6f6f6;
-  /* position: relative; par rapport à item-menu*/
   padding-left: 20px;
-  /* padding-right: 20px; voir plutard si utile */
 }
 
 .img-menu
 {
   width: 100%;
   object-fit: cover;
-  border-radius: 20px 20px 0 0;
-  height: 200px;
+  border-radius: 20px 20px 0 0;
+  height: 138px;
 }
 
 .item-menu
@@ -167,6 +165,8 @@ input[type="text"]
   border-radius: 20px;
   background-color: white;
   position: relative;
+  margin-right: 20px;
+  box-shadow: 3px 5px 15px rgb(202, 198, 198);
 }
 
 a
@@ -179,6 +179,7 @@ a
 {
   display: flex;
   flex-direction: column;
+  padding-left: 12px;
 }
 
 .nouveau
@@ -190,12 +191,24 @@ a
   margin-top: 15px;
 }
 
+.lieu
+{
+  font-weight: lighter;
+  margin-top: 0;
+  font-size: 14px;
+}
+
 h3
 {
   margin-top: 12px;
   margin-bottom: 5px;
+  font-size: 16px;
 }
-
+ h2
+ {
+  font-size: 20px;
+ }
+ 
 .position-texte-image
 {
   display: flex;
@@ -204,9 +217,20 @@ h3
 .fa-heart-o
 {
   position: absolute;
-  right: 89px;
+  right: 8%;
+  top: 69%;
   padding-top: 13px;
+  font-size: 19px;
+  bottom: 35px;
 }
+
+.fa-heart-o:hover /* à revoir */
+{
+  background: linear-gradient(to bottom right, #FF79DA , #9356DC);
+  cursor: pointer;
+  border: 0;
+}
+
 
 footer
 {
