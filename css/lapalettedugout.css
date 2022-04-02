@@ -57,6 +57,52 @@ a
   font-size: 25px; 
 }
 
+.type-repas
+{
+  font-weight: lighter;
+  padding-left: 20px;
+  font-size: 16px;
+  border-bottom: 3px solid #99e2d0;
+  width: 19px; 
+}
+
+
+
+.prix
+{
+  position: absolute;
+  right: 10%;
+  top: 30px;
+  font-weight: bold;
+}
+
+.item-plat
+{
+  position: relative;
+  background-color: white;
+  /* display: flex;
+  flex-direction: row; */
+  border-radius: 18px;
+  margin-bottom: 20px;
+  margin-right: 10px;
+  margin-left: 15px;
+  padding-left: 10px;
+  box-shadow: 3px 5px 15px rgb(202, 198, 198);
+  line-height: 0.6;
+}
+
+.plat
+{
+  font-weight: bold;
+  font-size: 17px;
+}
+
+.saveur
+{
+  font-weight: lighter;
+  font-size: 15px;
+}
+
 
 
 
@@ -80,7 +126,18 @@ a
   cursor: pointer;
   box-shadow: 3px 5px 15px rgb(202, 198, 198);
   margin-bottom: 20px;
+  width: 55%;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  font-size: 15px;
 }
+
+input[type="submit"]
+{
+  margin-left: 22%;
+  margin-top: 25px;
+}
+
 footer
 {
   background-color: #353535;
