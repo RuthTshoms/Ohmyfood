@@ -146,6 +146,8 @@ footer
   background-color: #353535;
   padding-left: 20px;
   padding-bottom: 30px;
+  position: relative;
+  top: 222px;
 }
 
 .footer-logo, nav a, .fa-utensils, .fa-handshake
