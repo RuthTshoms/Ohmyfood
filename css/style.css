@@ -34,7 +34,7 @@ form
   display: flex;
   justify-content: center;
   background-color: #eaeaea;
-  box-shadow: 2px 0 0 #eaeaea;
+  box-shadow: 1px 5px 14px rgb(80 79 79); /* essayer de le mettre sous la bordure top */
 }
 
 .fa-map-marker-alt
@@ -72,6 +72,8 @@ input[type="text"]
   border-radius: 25px;
   padding: 13px;
   cursor: pointer;
+  box-shadow: 3px 5px 15px rgb(202, 198, 198);
+  margin-bottom: 20px;
 }
 
 #background-color
@@ -94,13 +96,15 @@ input[type="text"]
 {
   display: flex;
   flex-direction: row;
-  border-radius: 25px;
+  border-radius: 18px;
   background-color: #f6f6f6;
   margin-bottom: 20px;
-  padding-top: 4px;
-  padding-bottom: 4px;
+  padding-top: 8px;
+  padding-bottom: 8px;
   padding-top: 0;
   justify-content: space-evenly;
+  margin-right: 10px;
+  box-shadow: 3px 5px 15px rgb(202, 198, 198);
 }
 
 .item-fonct:hover
@@ -207,6 +211,8 @@ h3
  h2
  {
   font-size: 20px;
+  margin-top: 40px;
+  margin-bottom: 20px;
  }
  
 .position-texte-image
