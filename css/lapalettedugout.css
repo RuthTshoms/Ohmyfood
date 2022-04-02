@@ -27,3 +27,82 @@ h1
   object-fit: cover;
 }
 
+a
+{
+  text-decoration: none;
+  color: black;
+}
+
+.container-menu
+{
+  display: flex;
+  flex-direction: column;
+  background-color: #f6f6f6;
+  border-radius: 25px 25px 0 0;
+}
+
+.restaurant
+{
+  font-family: 'Shrikhand', cursive;
+  position: relative;
+  font-size: 26px; 
+  padding-left: 20px; 
+}
+
+.fa-heart-o
+{
+  position: absolute;
+  right: 10%;
+  top: 114%; /* ou padding-top: 24px; */
+  font-size: 25px; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#commander
+{
+  color: white;
+  border: 0;
+  background: linear-gradient(to bottom right, #FF79DA , #9356DC);
+  border-radius: 25px;
+  padding: 13px;
+  cursor: pointer;
+  box-shadow: 3px 5px 15px rgb(202, 198, 198);
+  margin-bottom: 20px;
+}
+footer
+{
+  background-color: #353535;
+  padding-left: 20px;
+  padding-bottom: 30px;
+}
+
+.footer-logo, nav a, .fa-utensils, .fa-handshake
+{
+  color: white;
+  font-size: 15px;
+}
+
+.footer-logo
+{
+  font-family: 'Shrikhand', cursive;
+  padding-top: 20px;
+} 
+
+.footer-link
+{
+  line-height: 1.8;
+  font-size: 13px;
+}
+
