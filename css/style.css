@@ -306,6 +306,17 @@ footer
 
 }
 
+ /* ____ Breakpoint tablette ____ */
+ @media screen and (min-width: 960px)
+ {
+   .chiffre 
+   {
+     left: 5%;
+   }
+ 
+ }
+
+/* _______ DESKTOP _______ */
 @media screen and (min-width: 993px)
 {
 
@@ -325,7 +336,4 @@ footer
     left: 1%;
   }
 
-  
-
-  
 }
