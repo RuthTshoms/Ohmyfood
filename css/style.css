@@ -305,3 +305,27 @@ footer
   }
 
 }
+
+@media screen and (min-width: 993px)
+{
+
+  .item-fonct
+  {
+    margin-left: 15px;
+    width: 85%;
+  }
+
+  .choix-fonct
+  {
+    padding-right: 17%;
+  }
+
+  .chiffre
+  {
+    left: 1%;
+  }
+
+  
+
+  
+}
