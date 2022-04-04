@@ -286,7 +286,12 @@ footer
   .item-fonct
   {
     margin-left: 50px;
-    width: 75%;
+    width: 85%;
+  }
+
+  .choix-fonct
+  {
+    padding-right: 17%;
   }
 
   .chiffre
@@ -294,14 +299,9 @@ footer
     left: 6%;
   }
 
-  #container-fonctionnement
-  {
-  }
-
   h2
   {
     text-align: center;
   }
-
 
 }
