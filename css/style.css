@@ -250,6 +250,8 @@ footer
   background-color: #353535;
   padding-left: 20px;
   padding-bottom: 30px;
+  position: absolute;
+  width: 100%;
 }
 
 .footer-logo, nav a, .fa-utensils, .fa-handshake
