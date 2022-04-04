@@ -28,7 +28,7 @@ h1
 
 form
 {
-  border: 2px solid #eaeaea;
+  border: 1px solid #eaeaea;
   width: 99%;
   display: flex;
   justify-content: center;
@@ -97,6 +97,7 @@ input[type="text"]
 {
   display: flex;
   flex-direction: row;
+  width: 93%;
   border-radius: 18px;
   background-color: #f6f6f6;
   margin-bottom: 20px;
