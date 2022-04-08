@@ -29,7 +29,7 @@ h1
 form
 {
   border: 1px solid #eaeaea;
-  width: 99%;
+  width: 100%;
   display: flex;
   justify-content: center;
   background-color: #eaeaea;
@@ -96,7 +96,7 @@ input[type="text"]
 {
   display: flex;
   flex-direction: row;
-  width: 93%;
+  /* width: 93%; */
   border-radius: 18px;
   background-color: #f6f6f6;
   margin-bottom: 20px;
@@ -221,6 +221,7 @@ h3
   font-size: 20px;
   margin-top: 40px;
   margin-bottom: 20px;
+  padding-left: 20px;
  }
  
 .position-texte-image
