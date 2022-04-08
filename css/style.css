@@ -38,7 +38,7 @@ form
 
 .fa-map-marker-alt
 {
-  padding-top: 10px;
+  padding-top: 12px;
 }
 
 input[type="text"]
@@ -102,7 +102,6 @@ input[type="text"]
   margin-bottom: 20px;
   padding-top: 8px;
   padding-bottom: 8px;
-  padding-top: 0; /* PADDING_TOP DEUX FOIS ? */
   margin-left: 20px;
   justify-content: space-evenly;
   margin-right: 10px;
@@ -124,6 +123,7 @@ input[type="text"]
 {
   padding-right: 52px;
   font-size: 14px;
+  font-weight: bold;
 }
 
 .fa-store, .fa-mobile, .fa-list-ul
