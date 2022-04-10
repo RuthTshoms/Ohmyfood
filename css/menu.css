@@ -71,6 +71,7 @@ a
   padding-left: 20px;
   font-size: 16px;
   width: 19px; 
+  margin-bottom: 6px;
 }
 
 hr
@@ -81,8 +82,7 @@ hr
   margin: 0;
   margin-left: 20px;
   border: 0;
-  position: absolute;
-  top: 119px;
+  margin-bottom: 15px;
 }
 
 .prix
