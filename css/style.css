@@ -197,8 +197,8 @@ a
   position: absolute;
   right: 5%;
   margin-top: 15px;
-  padding: 5px;
-  font-size: 11px;
+  padding: 8px;
+  font-size: 16px;
   font-weight: bold;
   border-radius: 2px;
 }
@@ -256,7 +256,7 @@ footer
   width: 100%;
 }
 
-.footer-logo, nav a, .fa-utensils, .fa-handshake
+.footer-logo, nav a 
 {
   color: white;
   font-size: 15px;
@@ -265,6 +265,7 @@ footer
 .fa-utensils, .fa-handshake
 {
   padding-right: 8px;
+  font-size: 12px;
 }
 
 .footer-logo
@@ -281,7 +282,6 @@ footer
 .footer-link
 {
   line-height: 1.8;
-  font-size: 13px;
   padding-left: 20px;
 }
 
