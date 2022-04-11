@@ -29,7 +29,7 @@ h1
 form
 {
   border: 1px solid #eaeaea;
-  width: 100%;
+  /* width: 100%; */
   display: flex;
   justify-content: center;
   background-color: #eaeaea;
@@ -299,18 +299,31 @@ footer
 
   .item-fonct
   {
-    margin-left: 50px;
+    margin-left: 23px;
     width: 85%;
+    position: relative;
   }
 
   .choix-fonct
   {
-    padding-right: 17%;
+    padding-right: 0;
   }
+
+  #flex-media
+   {
+     display: flex;
+   }
 
   .chiffre
   {
-    left: 6%;
+    left: -3%;
+    margin-left: 0;
+  }
+
+
+  .fa-store, .fa-mobile, .fa-list-ul
+  {
+  padding-left: 13px;
   }
 
   h2
