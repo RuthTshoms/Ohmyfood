@@ -453,5 +453,15 @@ footer
     font-size: 11px;
   }
 
+}
+
+@media screen and (min-width: 1870px)
+{
+
+  .chiffre
+  {
+    left: -2%;
+  }
+
 
 }
