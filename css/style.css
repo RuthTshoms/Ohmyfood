@@ -114,7 +114,6 @@ input[type="text"]
 {
   background-color: #f5edff;
   cursor: pointer;
-  box-shadow: 4px 5px 15px rgb(182, 181, 181);
 }   
 
 .item-fonct:hover .fa-store /* hover sur l'élément à l'intérieur de l'item en mode :hover*/
