@@ -10,6 +10,100 @@ body
   /* margin auto pour centrer ; */
 }
 
+.accueil
+{
+  height: 100%;
+  width: 100%; /* enlever si cela créé un scroll gauche droite */
+}
+
+.loader 
+{
+  position: absolute; /* passe au dessus de .accueil */
+  width: 100%;
+  height: 100%;
+  background-color: #353535;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.lettre
+{
+  font-family: 'Shrikhand', cursive;
+  font-size: 80px;
+  color: white; /* pour le moment */
+  margin-bottom: 150px;
+  animation: flash 1.2s linear infinite; /* reprise de l'animation qu'on a créée */
+}
+
+@keyframes flash
+{
+  0% /* moment de l'animation */
+  {
+    color: #9356DC;
+    text-shadow: 0 0 7 #9356DC;
+  }
+
+  25%
+  {
+    color: #FF79DA;
+    text-shadow: 0 0 7 #FF79DA ;
+  }
+
+  75%
+  {
+    color: #99E2D0 ;
+    text-shadow: 0 0 7 #99E2D0;
+  }
+
+  100%
+  {
+    color: white;
+    text-shadow: none;
+  }
+}
+
+.lettre:nth-child(1) /* premier enfant de .lettre et ainsi de suite */
+{
+  animation-delay: 0.1s; /* délais de l'animation */
+}
+
+.lettre:nth-child(2)
+{
+  animation-delay: 0.2s;
+}
+
+.lettre:nth-child(3)
+{
+  animation-delay: 0.3s;
+}
+
+.lettre:nth-child(4)
+{
+  animation-delay: 0.4s;
+}
+
+.lettre:nth-child(5)
+{
+  animation-delay: 0.5s;
+}
+
+.lettre:nth-child(6)
+{
+  animation-delay: 0.6s;
+}
+
+.lettre:nth-child(7)
+{
+  animation-delay: 0.7s;
+}
+
+.lettre:nth-child(8)
+{
+  animation-delay: 0.8s;
+}
+
+
 header
 {
   display: flex;
