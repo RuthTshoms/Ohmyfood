@@ -1,3 +1,5 @@
+/* Mobile first - version par défaut */
+
 *{
   font-family: 'Roboto', sans-serif;
 }
@@ -112,12 +114,23 @@ input[type="text"]
 {
   background-color: #f5edff;
   cursor: pointer;
-}   /* inclure hover de l'icone dans hover de l'item */
+  box-shadow: 4px 5px 15px rgb(182, 181, 181);
+}   
 
-.fa-store:hover
+.item-fonct:hover .fa-store /* hover sur l'élément à l'intérieur de l'item en mode :hover*/
 {
   color: #9356DC;
 }
+
+.item-fonct:hover .fa-mobile 
+{
+  color: #9356DC;
+}
+
+.item-fonct:hover .fa-list-ul
+{
+  color: #9356DC;
+} /* essayer de les mettre ensemble et qu'ils fonctionnent ! */
 
 .choix-fonct
 {
