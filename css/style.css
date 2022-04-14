@@ -63,11 +63,6 @@ body
   }
 }
 
-/* @media (prefers-reduced-motion: reduce) {  réduction de l'animation pour les personne souffran de trouble 
-  .lettre {
-  animation: none; 
-  } */ 
-
 .lettre:nth-child(1) /* étape optionnelle, application de l'animation sur le premier enfant de .lettre et ainsi de suite */
 {
   animation-delay: 0.1s; /* délais de l'animation */
