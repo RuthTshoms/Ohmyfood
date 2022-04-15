@@ -16,9 +16,10 @@ body
   width: 100%; /* enlever si cela créé un scroll gauche droite 
 } */
 
-.loader 
+#loader 
 {
-  /* position: absolute;  fait passer au dessus de .accueil */
+  position: fixed;
+  z-index: 999; /* être sûr que l'élément passe au dessus de tout */
   width: 100%;
   height: 100%;
   background-color: white;
@@ -345,6 +346,7 @@ h3
   padding-top: 13px;
   font-size: 19px;
   bottom: 35px;
+  height: 20px;
   color: transparent;
   -webkit-text-stroke: 2px black;
 }
