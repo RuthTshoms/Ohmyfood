@@ -111,13 +111,6 @@ hr
   line-height: 0.6;
 }
 
-.item-plat:hover
-{
-  
-  border-radius: 0 25px 25px 0;
-  cursor: pointer;
-}
-
 .plat
 {
   font-weight: bold;
@@ -192,3 +185,20 @@ footer
   font-size: 13px;
 }
 
+
+/* _______ DESKTOP _______ */
+@media screen and (min-width: 993px)
+{
+
+  .item-p
+{
+  transition: opacity 200ms ease-in-out  ;
+}
+
+.fa-circle-check
+{
+
+}
+
+
+}
