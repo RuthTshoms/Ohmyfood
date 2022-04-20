@@ -110,13 +110,9 @@ hr
   box-shadow: 3px 5px 15px rgb(202, 198, 198);
   line-height: 0.6;
   cursor: pointer;
-  /* transition-property: width, opacity, background-color, color; 
-  transition-duration: 2s, 0.7s, 0.7s, 0.7s;
-  transition-timing-function: ease-in-out; */
-  
 }
 
-.item-plat:hover #check /* état final précisant uniquement les propriété qui changent */
+.item-plat:hover #check /* état final précisant uniquement les propriétés qui changent */
 {
   /*opacity: 1;*/
   width: 8%;
@@ -137,6 +133,10 @@ hr
   color: white;
   background-color: #99e2d0;
   border-radius: 0 18px 18px 0;
+  -webkit-transition: width 2s; /* TRANSITION */
+  -moz-transition: width 2s; /* adapté à Mozilla firefox */
+  -o-transition: width 2s; /* OPéra */
+  transition: width 2s; /* navigateurs récents */
 }
 
 
