@@ -12,14 +12,14 @@ body
 
 #accueil
 {
-  -webkit-animation-name: apparition-loader;
+  /*-webkit-animation-name: apparition-loader;
   -webkit-animation-duration: 3s;
   -moz-animation-name: apparition-loader;
   -moz-animation-duration: 3s;
   -o-animation-name: apparition-loader;
   -o-animation-duration: 3s;
-  animation-name: apparition-loader; /* navigateur récents */
-  animation-duration: 3s;
+  animation-name: apparition-loader; /* navigateur récents
+  animation-duration: 3s; */
 }
 
 #loader 
@@ -32,14 +32,15 @@ body
   display: flex;
   justify-content: center;
   align-items: center;
-  /*-webkit-animation-name: apparition-loader;
+  -webkit-animation-name: apparition-loader;
   -webkit-animation-duration: 3s;
-  -moz-animation-name: apparition-loader;
+  /*-moz-animation-name: apparition-loader;
   -moz-animation-duration: 3s;
   -o-animation-name: apparition-loader;
-  -o-animation-duration: 3s;*/
-  /* animation-name: apparition-loader; navigateur récents 
-  animation-duration: 10s; */
+  -o-animation-duration: 3s; */
+  animation-name: apparition-loader; /* navigateur récents */
+  animation-duration: 3s;
+  animation-iteration-count: 1;
 }
 
 @-webkit-keyframes apparition-loader
@@ -72,7 +73,7 @@ body
   font-size: 80px;
   color: white; /* pour le moment */
   margin-bottom: 150px;
-  animation: flash 1.2s linear infinite; /* étape 2 reprise de l'animation qu'on a créée : nom + durée + trajectoire */
+  animation: flash 1.2s linear infinite; /* étape 2 reprise de l'animation qu'on a créée : nom + durée + mode de répétitions */
 }
 
 @keyframes flash /* étape 1 création de l'animation */
