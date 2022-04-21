@@ -10,11 +10,17 @@ body
   /* margin auto pour centrer ; */
 }
 
-/* .accueil
+#accueil
 {
-  height: 100%;
-  width: 100%; /* enlever si cela créé un scroll gauche droite 
-} */
+  -webkit-animation-name: apparition-loader;
+  -webkit-animation-duration: 3s;
+  -moz-animation-name: apparition-loader;
+  -moz-animation-duration: 3s;
+  -o-animation-name: apparition-loader;
+  -o-animation-duration: 3s;
+  animation-name: apparition-loader; /* navigateur récents */
+  animation-duration: 3s;
+}
 
 #loader 
 {
@@ -26,14 +32,38 @@ body
   display: flex;
   justify-content: center;
   align-items: center;
-  -webkit-animation-name: apparition-loader;
+  /*-webkit-animation-name: apparition-loader;
   -webkit-animation-duration: 3s;
   -moz-animation-name: apparition-loader;
   -moz-animation-duration: 3s;
   -o-animation-name: apparition-loader;
-  -o-animation-duration: 3s;
-  animation-name: apparition-loader; /* navigateur récents */
-  animation-duration: 3s;
+  -o-animation-duration: 3s;*/
+  /* animation-name: apparition-loader; navigateur récents 
+  animation-duration: 10s; */
+}
+
+@-webkit-keyframes apparition-loader
+{
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@-moz-keyframes apparition-loader
+{
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@-o-keyframes apparition-loader
+{
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes apparition-loader
+{
+  from {opacity: 0;}
+  to {opacity: 1;}
 }
 
 .lettre
