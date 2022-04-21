@@ -26,6 +26,14 @@ body
   display: flex;
   justify-content: center;
   align-items: center;
+  -webkit-animation-name: apparition-loader;
+  -webkit-animation-duration: 3s;
+  -moz-animation-name: apparition-loader;
+  -moz-animation-duration: 3s;
+  -o-animation-name: apparition-loader;
+  -o-animation-duration: 3s;
+  animation-name: apparition-loader; /* navigateur récents */
+  animation-duration: 3s;
 }
 
 .lettre
