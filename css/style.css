@@ -12,66 +12,77 @@ body
 
 #accueil
 {
-  -webkit-animation-name: apparition-accueil;
-  -webkit-animation-duration: initial;
-  -webkit-animation-delay: 3s;
+  visibility: hidden; 
   animation-name: apparition-accueil;
-  animation-duration: initial;
-  animation-delay: 3s;
-}
-
-@-webkit-keyframes apparition-accueil
-{
-  0%
-  {
-    opacity: 0;
-  }
-
-  100%
-  {
-    opacity: 1;
-  }
+  animation-duration: 3s;
+  animation-fill-mode: forwards; 
+  /*-webkit-animation-name: apparition-accueil;
+  -webkit-animation-duration: 2s; */
 }
 
 @keyframes apparition-accueil
 {
-  0%
+  /*0%
   {
-    opacity: 0;
+    visibility: hidden;
+  }*/
+
+  55%
+  {
+    visibility: hidden;
   }
 
   100%
   {
-    opacity: 1;
+    visibility: visible;
   }
-}
+} 
+
+/*@-webkit-keyframes apparition-accueil
+{
+  0%
+  {
+    visibility: hidden;
+  }
+
+  100%
+  {
+    visibility: visible;
+  }
+
+} */
 
 #loader 
 {
   position: fixed;
-  z-index: 999; /* être sûr que l'élément passe au dessus de tout */
+  z-index: 999;  /* être sûr que l'élément passe au dessus de tout */
   width: 100%;
   height: 100%;
   background-color: white;
   display: flex;
   justify-content: center;
   align-items: center;
-  -webkit-animation-name: apparition-loader;
+  /*-webkit-animation-name: apparition-loader;
   -webkit-animation-duration: 3s;
   -webkit-animation-direction: alternate;
-  -webkit-animation-fill-mode: forwards; /* définir état de l'animation une fois terminée : 0% */
-  /*-moz-animation-name: apparition-loader;
+  -webkit-animation-fill-mode: forwards; 
+  -moz-animation-name: apparition-loader;
   -moz-animation-duration: 3s;
   -o-animation-name: apparition-loader;
   -o-animation-duration: 3s; */
   animation-name: apparition-loader; /* navigateur récents */
   animation-duration: 3s;
   /*animation-direction: alternate; /* commence l'animation de 0 à 100% */
-  animation-fill-mode: forwards;
-  /* animation-iteration-count: 1; */
+  animation-fill-mode: forwards; /*définir état de l'animation une fois terminée : 0% */
 }
 
-@-webkit-keyframes apparition-loader
+@keyframes apparition-loader
+{
+  from {opacity: 1;}
+  to {opacity: 0;}
+}
+
+/*@-webkit-keyframes apparition-loader
 {
   0%
   {
@@ -105,12 +116,6 @@ body
   from {opacity: 1;}
   to {opacity: 0;}
 }*/
-
-@keyframes apparition-loader
-{
-  from {opacity: 1;}
-  to {opacity: 0;}
-}
 
 .lettre
 {
