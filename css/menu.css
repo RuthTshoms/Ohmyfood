@@ -123,6 +123,8 @@ hr
   animation-name: apparition-plat;
   animation-duration: 2s;
 	animation-delay: 0.9s;
+  opacity: 0;
+  animation-fill-mode: forwards;
 }
 
 .item-plat3
@@ -130,6 +132,8 @@ hr
   animation-name: apparition-plat;
   animation-duration: 2s;
 	animation-delay: 1.6s;
+  opacity: 0;
+  animation-fill-mode: forwards;
 }
 
 .element2 /* effet qui monte sur groupe de plat */
