@@ -16,8 +16,6 @@ body
   animation-name: apparition-accueil;
   animation-duration: 3s;
   animation-fill-mode: forwards; 
-  /*-webkit-animation-name: apparition-accueil;
-  -webkit-animation-duration: 2s; */
 }
 
 @keyframes apparition-accueil
@@ -35,20 +33,6 @@ body
 
 } 
 
-/*@-webkit-keyframes apparition-accueil
-{
-  0%
-  {
-    visibility: hidden;
-  }
-
-  100%
-  {
-    visibility: visible;
-  }
-
-} */
-
 #loader 
 {
   position: fixed;
@@ -59,60 +43,26 @@ body
   display: flex;
   justify-content: center;
   align-items: center;
-  /*-webkit-animation-name: apparition-loader;
-  -webkit-animation-duration: 3s;
-  -webkit-animation-direction: alternate;
-  -webkit-animation-fill-mode: forwards; 
-  -moz-animation-name: apparition-loader;
-  -moz-animation-duration: 3s;
-  -o-animation-name: apparition-loader;
-  -o-animation-duration: 3s; */
-  animation-name: apparition-loader; /* navigateur récents */
+  animation-name: apparition-loader; 
   animation-duration: 3s;
-  /*animation-direction: alternate; /* commence l'animation de 0 à 100% */
-  animation-fill-mode: forwards; /*définir état de l'animation une fois terminée : 0% */
+  animation-fill-mode: forwards; /* définir état de l'animation une fois terminée : 0% */
 }
 
 @keyframes apparition-loader
-{
-  from {opacity: 1;}
-  to {opacity: 0;}
-}
-
-/*@-webkit-keyframes apparition-loader
 {
   0%
   {
     opacity: 1;
   }
 
-  50%
-  {
-    opacity: 0.80;
-  }
-
-  75%
-  {
-    opacity: 0.50;
-  }
-
-  100% 
+  100%
   {
     opacity: 0;
+    visibility: hidden;
   }
+  
 }
 
-/*@-moz-keyframes apparition-loader
-{
-  from {opacity: 1;}
-  to {opacity: 0;}
-}
-
-@-o-keyframes apparition-loader
-{
-  from {opacity: 1;}
-  to {opacity: 0;}
-}*/
 
 .lettre
 {
@@ -120,12 +70,12 @@ body
   font-size: 80px;
   color: white;
   margin-bottom: 150px;
-  animation: flash 1.2s linear infinite; /* infinite ? - étape 2 reprise de l'animation qu'on a créée : nom + durée + mode de répétitions */
+  animation: flash 1.2s linear infinite; /* étape 2 reprise de l'animation qu'on a créée : nom + durée + mode de répétitions */
 }
 
 @keyframes flash /* étape 1 création de l'animation */
 {
-  0% /* moment de l'animation */
+  0%
   {
     color: #9356DC;
     text-shadow: 0 0 7 #9356DC;
@@ -152,7 +102,7 @@ body
 
 .lettre:nth-child(1) /* étape optionnelle, application de l'animation sur le premier enfant de .lettre et ainsi de suite */
 {
-  animation-delay: 0.1s; /* délais de l'animation */
+  animation-delay: 0.1s;
 }
 
 .lettre:nth-child(2)
@@ -214,11 +164,10 @@ h1
 form
 {
   border: 1px solid #eaeaea;
-  /* width: 100%; */
   display: flex;
   justify-content: center;
   background-color: #eaeaea;
-  box-shadow: 1px 5px 14px rgb(80 79 79); /* essayer de le mettre sous la bordure top */
+  box-shadow: 1px 5px 14px rgb(80 79 79);
 }
 
 .fa-map-marker-alt
@@ -281,7 +230,6 @@ input[type="text"]
 {
   display: flex;
   flex-direction: row;
-  /* width: 93%; */
   border-radius: 18px;
   background-color: #f6f6f6;
   margin-bottom: 20px;
@@ -312,7 +260,7 @@ input[type="text"]
 .item-fonct:hover .fa-list-ul
 {
   color: #9356DC;
-} /* essayer de les mettre ensemble et qu'ils fonctionnent ! */
+}
 
 .choix-fonct
 {
@@ -434,7 +382,7 @@ h3
   bottom: 35px;
   height: 20px;
   color: transparent;
-  -webkit-text-stroke: 2px black;
+  -webkit-text-stroke: 2px black; 
 }
 
 .fa-heart:hover 
@@ -658,6 +606,5 @@ footer
   {
     left: -2%;
   }
-
 
 }

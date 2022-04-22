@@ -146,8 +146,49 @@ hr
   animation-delay: 0.8s;
 } */
 
+.info-check{
+	background-color: #99e2d0;
+	border-radius: 0 18px 18px 0;
+	color: white;
+	visibility: hidden;
+	position: absolute;
+	right: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 69px;
+	bottom: 0;
+	margin: 0;
+}
 
-.fa-list-ul /* ::after - état initial + transitions */
+.item-plat:hover .info-check{
+	animation: slidefromright 0.7s both;
+}
+
+@keyframes slidefromright {
+  0% {
+    width: 0%;
+  }
+  100% {
+    visibility: visible;
+    width: 75px;
+  }
+}
+
+.item-plat:hover i{
+	animation: tourne 0.8s ease;
+}
+
+@keyframes tourne {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.fa-check-circle /* ::after - état initial + transitions */
 {
   /*content: "\f0ca";*/
   display: flex;
@@ -165,14 +206,11 @@ hr
   border-radius: 0 18px 18px 0;
   transform: translateX(0);
  /* transform: rotate(360deg); */
-  -webkit-transition: width 0.5s, transform 0.5s ease-in-out; /* TRANSITION */
-  /*-moz-transition: width 0.5s, transform 0.5s ease-in-out; /* adapté à Mozilla firefox */
-  /*-o-transition: width 0.5s, transform 0.5s ease-in-out; /* Opéra */
-  transition: width 0.5s, transform 0.5s ease-in-out; /* navigateurs récents */
+  transition: width 0.5s, transform 0.5s ease-in-out;
   /* transform: rotate(360deg); */
 }
 
-.item-plat:hover .fa-list-ul /* rotate /* état final précisant uniquement les propriétés qui changent */
+.item-plat:hover .fa-check-circle /* rotate /* état final précisant uniquement les propriétés qui changent */
 {
   width: 8%;
   /*transform: rotate(360deg);*/
