@@ -149,7 +149,7 @@ hr
 
 .fa-list-ul /* ::after - état initial + transitions */
 {
-  /*content: " ";*/
+  /*content: "\f0ca";*/
   display: flex;
   align-items: center;
   justify-content: center;
@@ -179,6 +179,7 @@ hr
   /*left: 92%;
   color: white; */
 }
+
 
 .plat
 {
