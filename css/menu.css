@@ -183,7 +183,8 @@ hr
 	margin: 0;
 }
 
-.item-plat:hover .info-check{
+.item-plat1:hover .info-check, .item-plat2:hover .info-check, .item-plat3:hover .info-check
+{
 	animation: slidefromright 0.7s both;
 }
 
@@ -197,7 +198,8 @@ hr
   }
 }
 
-.item-plat:hover i{
+.item-plat1:hover i, .item-plat2:hover i, .item-plat3:hover i
+{
 	animation: tourne 0.8s ease;
 }
 
@@ -230,7 +232,7 @@ hr
   transition: width 0.5s, transform 0.5s ease-in-out;
 }
 
-.item-plat:hover .fa-check-circle /* fa-list-ul anne so - rotate /* état final précisant uniquement les propriétés qui changent */
+.item-plat1:hover .fa-check-circle, .item-plat2:hover .fa-check-circle, .item-plat3:hover .fa-check-circle /* fa-list-ul anne so - rotate /* état final précisant uniquement les propriétés qui changent */
 {
   width: 8%;
 }
