@@ -74,8 +74,6 @@ a
   font-size: 16px;
   width: 19px; 
   margin-bottom: 6px;
-  transition-property: background; /* à revoir pour apparition progressive des plats */
-  transition-duration: 2s;
 }
 
 
@@ -126,6 +124,7 @@ hr
   0%
   {
     opacity: 0;
+    transform: translateY(50%);
   }
 
   90%
@@ -198,17 +197,12 @@ hr
   background-color: #99e2d0;
   border-radius: 0 18px 18px 0;
   transform: translateX(0);
- /* transform: rotate(360deg); */
   transition: width 0.5s, transform 0.5s ease-in-out;
-  /* transform: rotate(360deg); */
 }
 
 .item-plat:hover .fa-check-circle /* fa-list-ul anne so - rotate /* état final précisant uniquement les propriétés qui changent */
 {
   width: 8%;
-  /*transform: rotate(360deg);*/
-  /*left: 92%;
-  color: white; */
 }
 
 
