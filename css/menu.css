@@ -96,7 +96,7 @@ hr
   font-weight: bold;
 }
 
-.item-plat
+.item-plat1, .item-plat2, .item-plat3
 {
   position: relative;
   background-color: white;
@@ -111,13 +111,37 @@ hr
   animation: apparition-plat 2s ease;
 }
 
-.element2{
-	animation-delay: 1s;
+.item-plat1 
+{
+  animation-name: apparition-plat;
+  animation-duration: 2s;
+  animation-delay: 0.5s;
 }
 
-.element3{
+.item-plat2
+{
+  animation-name: apparition-plat;
+  animation-duration: 2s;
+	animation-delay: 0.9s;
+}
+
+.item-plat3
+{
+  animation-name: apparition-plat;
+  animation-duration: 2s;
+	animation-delay: 1.6s;
+}
+
+.element2 /* effet qui monte sur groupe de plat */
+{
 	animation-delay: 2s;
 }
+
+.element3
+{
+	animation-delay: 3s;
+}
+
 
 @keyframes apparition-plat
 {
@@ -127,9 +151,9 @@ hr
     transform: translateY(50%);
   }
 
-  90%
+  30%
   {
-    opacity: 0.50;
+    opacity: 0;
   }
 
   100%
