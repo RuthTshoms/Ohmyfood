@@ -214,19 +214,16 @@ hr
 
 .fa-check-circle /* ::after - état initial + transitions */
 {
-  /*content: "\f0ca";*/
   display: flex;
   align-items: center;
   justify-content: center;
   position: absolute;
   left: 92%;
-  color: white;
-  /*left: 100%;
-  color: transparent; change le point de départ */
+  left: 50%;
   bottom: 0%;
   height: 69px;
   width: 0%;
-  background-color: #99e2d0;
+  font-size: 20px;
   border-radius: 0 18px 18px 0;
   transform: translateX(0);
   transition: width 0.5s, transform 0.5s ease-in-out;
@@ -242,12 +239,16 @@ hr
 {
   font-weight: bold;
   font-size: 17px;
+  /*text-overflow: ellipsis;
+  overflow: hidden;*/
 }
 
 .saveur
 {
   font-weight: lighter;
   font-size: 15px;
+  /*text-overflow: ellipsis;
+  overflow: hiddeen;*/
 }
 
 #commander
@@ -298,4 +299,6 @@ footer
   line-height: 1.8;
   font-size: 13px;
 }
+
+@media screen and (max-width: )
 
