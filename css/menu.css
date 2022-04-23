@@ -178,7 +178,7 @@ hr
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	height: 69px;
+	height: 71px;
 	bottom: 0;
 	margin: 0;
 }
@@ -187,6 +187,13 @@ hr
 {
 	animation: slidefromright 0.7s both;
 }
+
+.item-plat1:hover .prix, .item-plat2:hover .prix, .item-plat3:hover .prix
+{
+  animation: slidefromright 0.7s;
+  animation-fill-mode: forwards;
+}
+
 
 @keyframes slidefromright {
   0% {
@@ -229,7 +236,7 @@ hr
   transition: width 0.5s, transform 0.5s ease-in-out;
 }
 
-.item-plat1:hover .fa-check-circle, .item-plat2:hover .fa-check-circle, .item-plat3:hover .fa-check-circle /* fa-list-ul anne so - rotate /* état final précisant uniquement les propriétés qui changent */
+.item-plat1:hover .fa-check-circle, .item-plat2:hover .fa-check-circle, .item-plat3:hover .fa-check-circle /*  - rotate /* état final précisant uniquement les propriétés qui changent */
 {
   width: 8%;
 }
@@ -239,16 +246,29 @@ hr
 {
   font-weight: bold;
   font-size: 17px;
-  /*text-overflow: ellipsis;
-  overflow: hidden;*/
+  width: 45%;
+  border: 1px solid transparent;
+  padding-top: 3px;
+  padding-bottom: 5px;
+  margin-top: 12px;
+  margin-bottom: 0px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .saveur
 {
   font-weight: lighter;
   font-size: 15px;
-  /*text-overflow: ellipsis;
-  overflow: hiddeen;*/
+  width: 40%;
+  margin-top: 4px;
+  border: 1px solid transparent;
+  padding-top: 3px;
+  padding-bottom: 5px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 #commander
@@ -299,6 +319,3 @@ footer
   line-height: 1.8;
   font-size: 13px;
 }
-
-@media screen and (max-width: )
-
