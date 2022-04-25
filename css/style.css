@@ -57,7 +57,7 @@ body
   100%
   {
     opacity: 0;
-    visibility: hidden;
+    visibility: hidden; /* permet de pouvoir conserver les liens de redirection actifs */
   }
   
 }
@@ -601,7 +601,7 @@ a[href*="mailtomailto:contact@ohmyfood.com"]:hover
   }
 }
 
-/* ____git Breakpoint desktop ____ */
+/* ____ Breakpoint desktop ____ */
 @media screen and (min-width: 1870px)
 {
 
