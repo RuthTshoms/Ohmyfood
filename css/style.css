@@ -77,19 +77,19 @@ body
   0%
   {
     color: #9356DC;
-    text-shadow: 0 0 7 #9356DC;
+    text-shadow: 0px 0px 7px #9356DC;
   }
 
   25%
   {
     color: #FF79DA;
-    text-shadow: 0 0 7 #FF79DA ;
+    text-shadow: 0px 0px 7px #FF79DA ;
   }
 
   75%
   {
     color: #99E2D0 ;
-    text-shadow: 0 0 7 #99E2D0;
+    text-shadow: 0px 0px 7px #99E2D0;
   }
 
   100%
