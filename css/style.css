@@ -397,6 +397,7 @@ h3
   border: 0;  
   -webkit-text-stroke: 0;
   -webkit-background-clip: text;
+  background-clip: text; /* pour régler le problème détecté par le terminal "define the standard property */
 }
 
 
