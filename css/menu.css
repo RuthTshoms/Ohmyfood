@@ -314,6 +314,11 @@ footer
   font-size: 15px;
 }
 
+.fa-utensils, .fa-handshake
+{
+  padding-right: 8px;
+}
+
 .footer-logo
 {
   font-family: 'Shrikhand', cursive;
