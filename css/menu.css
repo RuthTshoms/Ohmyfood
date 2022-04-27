@@ -108,7 +108,7 @@ hr
   box-shadow: 3px 5px 15px rgb(202, 198, 198);
   line-height: 0.6;
   cursor: pointer;
-  animation: apparition-plat 2s ease;
+  animation: apparition-plat 2s ease; /* timing-function ease, par défaut - augmente au milieu ralentit vers la fin */ 
 }
 
 .item-plat1 
@@ -138,7 +138,7 @@ hr
   animation-fill-mode: forwards;
 }
 
-.element2 /* effet qui monte sur groupe de plat */
+.element2 /* effet qui monte sur groupe de plat - font partie des class item */
 {
 	animation-delay: 2s;
 }
@@ -183,12 +183,12 @@ hr
 	margin: 0;
 }
 
-.item-plat1:hover .info-check, .item-plat2:hover .info-check, .item-plat3:hover .info-check
+.item-plat1:hover .info-check, .item-plat2:hover .info-check, .item-plat3:hover .info-check /* coche bleu qui glisse */
 {
 	animation: slidefromright 0.7s both;
 }
 
-.item-plat1:hover .prix, .item-plat2:hover .prix, .item-plat3:hover .prix
+.item-plat1:hover .prix, .item-plat2:hover .prix, .item-plat3:hover .prix /* prix qui se décale */
 {
   animation: slidefromright 0.7s;
   animation-fill-mode: forwards;
@@ -205,7 +205,7 @@ hr
   }
 }
 
-.item-plat1:hover i, .item-plat2:hover i, .item-plat3:hover i
+.item-plat1:hover i, .item-plat2:hover i, .item-plat3:hover i /* animation sur l'icone check */
 {
 	animation: tourne 0.8s ease;
 }
@@ -215,11 +215,11 @@ hr
     transform: rotate(0deg);
   }
   100% {
-    transform: rotate(360deg);
+    transform: rotate(360deg); /* état final check */
   }
 }
 
-.fa-check-circle /* ::after - état initial + transitions */
+.fa-check-circle /* - état initial + transitions */
 {
   display: flex;
   align-items: center;
@@ -253,7 +253,7 @@ hr
   margin-top: 12px;
   margin-bottom: 0px;
   white-space: nowrap;
-  overflow: hidden;
+  overflow: hidden; /* cacher le texte qui dépasse */
   text-overflow: ellipsis;
 }
 

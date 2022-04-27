@@ -9,12 +9,12 @@ body
   margin: 0;
 }
 
-#accueil
+#accueil /* état inital de l'id accueil */
 {
   visibility: hidden; 
   animation-name: apparition-accueil;
   animation-duration: 3s;
-  animation-fill-mode: forwards; 
+  animation-fill-mode: forwards; /* définir état à 0% état initial */
 }
 
 @keyframes apparition-accueil
@@ -27,12 +27,12 @@ body
 
   100%
   {
-    visibility: visible;
+    visibility: visible; /* état final de l'id accueil */
   }
 
 } 
 
-#loader 
+#loader /* état initial de l'id loader */
 {
   position: fixed;
   z-index: 999;  /* être sûr que l'élément passe au dessus de tout */
@@ -56,24 +56,24 @@ body
 
   100%
   {
-    opacity: 0;
+    opacity: 0; /* état final de l'id loader */
     visibility: hidden; /* permet de pouvoir conserver les liens de redirection actifs */
   }
   
 }
 
 
-.lettre
+.lettre /* état initial de la class lettre */
 {
   font-family: 'Shrikhand', cursive;
   margin-top: 150px;
   font-size: 40px;
   color: white;
   margin-bottom: 150px;
-  animation: flash 1.2s linear infinite; /* étape 2 reprise de l'animation qu'on a créée : nom + durée + mode de répétitions (+ temps de délai) */
+  animation: flash 1.2s linear infinite; /* reprise de l'animation qu'on a créée : nom + durée + mode de répétitions (+ temps de délai) */
 }
 
-@keyframes flash /* étape 1 création de l'animation */
+@keyframes flash /* création de l'animation */
 {
   0%
   {
@@ -375,7 +375,7 @@ h3
   display: flex;
 }
 
-.fa-heart
+.fa-heart /* état initial coeur */
 {
   position: absolute;
   right: 8%;
@@ -396,8 +396,8 @@ h3
   font-size: 17px;
   cursor: pointer;
   border: 0;  
-  -webkit-text-stroke: 0;
-  -webkit-background-clip: text;
+  -webkit-text-stroke: 0; /* définir l'épaisseur et la couleur du contour utilisé pour les lettres d'un texte */
+  -webkit-background-clip: text; /* la façon dont l'arrière-plan de l'élément s'étend */
   background-clip: text; /* pour régler le problème détecté par le terminal "define the standard property */
 }
 
